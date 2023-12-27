@@ -38,8 +38,11 @@ Exploration into manual CNN construction:
 
 ## Visual Representations
 
+Beofre and after the forward pass and the application of filters 
 ![Forward Pass Effect](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/f6c92693-0476-43aa-addd-2f4e3570db32)
 ![Forward Pass Visualization](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/ba086539-7ca6-4972-9b3f-96ce375a1826)
+
+Backpropagation gradient visualization 
 ![Backpropagation Gradient Visualization](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/7b0c4ec8-35ed-479e-8780-55a33843114c)
 
 This README provides a comprehensive walkthrough. The accompanying Jupyter notebook offers detailed line-by-line documentation for a deeper understanding.
