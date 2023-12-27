@@ -1,44 +1,47 @@
+
 # ManualCNN
 
-The objective of this project is to learn how a cnn works,by manualy implementing a few layers of cnn, we can see how to exactly build one 
-First we use hardcoded functions in pytorch on CIFAR10 dataset and do a multiclass classification 
-Then we tune hyperparameters in order to improve the accruacy of the predictions 
+This project aims to delve deep into understanding Convolutional Neural Networks (CNNs) by manually implementing a few CNN layers. The goal is to gain a comprehensive insight into constructing these layers from scratch.
 
-Going through the jupyer notebook will provide a better understanding as proper line by line documentation has been provided 
+## Overview
 
-After which we manually design our own neural network 
+1. **Loading CIFAR10 & Initial Neural Network:**
+   - Load the CIFAR10 dataset, preprocess it (e.g., normalization), and train a simple neural network using PyTorch functions. Achieve an initial accuracy of 52%.
 
+2. **Hyperparameter Tuning:**
+   - Perform basic hyperparameter tuning, raising the accuracy to 72%. Detailed comments reveal the iterative process and debugging efforts undertaken for optimization.
 
-# Loading CIFAR10 , basic pre-processing and running first neural networks # 
+3. **Manual Neural Network Construction:**
+   - Focus shifts to manually designing a neural network. Implement convolution operations using `scipy.signal.correlate2d` to mimic the convolution process. Backpropagation is then performed to compute gradients.
 
-In this initial part of the project, we load the dataset from the web and run a pre processing procedure such as normalizing the pixels 
-Then we train a simple neural network, use appropriate loss functions and gradient descent. 
-We get an accuracy of 52% 
+## Walkthrough
 
+### Loading CIFAR10 & Initial Neural Network
 
-# Tuning hyperparameters # 
-Basic hyperparameter tuning is done in order to improve the accuracy of the model from 52% to 72% 
+The notebook provides a step-by-step process:
+- Dataset loading from the web.
+- Preprocessing steps, like pixel normalization.
+- Training a basic neural network with appropriate loss functions and gradient descent, resulting in an initial 52% accuracy.
 
-Noticing carefully the comments, it can be seen that after careful debugging, a trial and error process was done to get the best results 
+### Tuning Hyperparameters
 
+This section emphasizes:
+- Basic hyperparameter tuning for accuracy improvement, achieving 72%.
+- Comments reflect the meticulous debugging and trial-and-error process undertaken to enhance model performance.
 
-# Building manual neural network # 
-A neural network works by passing filters and convolving them appropriately to extract information 
-This is done manually in this code by using the scipy.signal.correlate2d which essentially convolves and gives the output 
-This operation mimics the convolution process by summing the products of input and kernel values across spatial locations.
+### Manual Neural Network Design
 
-This concludes the filtering part of the process
-Below is the before and after of the effect of this forward pass step 
-![image](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/f6c92693-0476-43aa-addd-2f4e3570db32)
+Exploration into manual CNN construction:
+- Detailed explanation of manual convolution operations utilizing `scipy.signal.correlate2d`.
+- Demonstration of forward pass effects through visualizations.
+- Backpropagation for gradient calculation concerning input images, kernels, and biases.
 
-![image](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/ba086539-7ca6-4972-9b3f-96ce375a1826)
+## Visual Representations
 
+![Forward Pass Effect](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/f6c92693-0476-43aa-addd-2f4e3570db32)
+![Forward Pass Visualization](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/ba086539-7ca6-4972-9b3f-96ce375a1826)
+![Backpropagation Gradient Visualization](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/7b0c4ec8-35ed-479e-8780-55a33843114c)
 
-Next the back propagation is done where gradient is taken wrt to input image, kernel and bias 
+This README provides a comprehensive walkthrough. The accompanying Jupyter notebook offers detailed line-by-line documentation for a deeper understanding.
 
-<img width="988" alt="Screenshot 2023-12-26 at 9 53 28 PM" src="https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/7b0c4ec8-35ed-479e-8780-55a33843114c">
-
-
-
-
-
+---
