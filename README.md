@@ -38,7 +38,8 @@ Exploration into manual CNN construction:
 
 ## Visual Representations
 
-Beofre and after the forward pass and the application of filters 
+Before and after the forward pass and the application of filters 
+
 ![Forward Pass Effect](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/f6c92693-0476-43aa-addd-2f4e3570db32)
 ![Forward Pass Visualization](https://github.com/Sathyanarayanan-ops/ManualCNN/assets/57038667/ba086539-7ca6-4972-9b3f-96ce375a1826)
 
